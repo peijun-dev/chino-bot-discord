@@ -48,7 +48,7 @@ namespace chino_bot_discord
                 return;
             int argPos = 0;
             //コマンドかどうか判定
-            if (!(message.HasCharPrefix('/', ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos)))
+            if (!(message.HasCharPrefix('!', ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos)))
                 return;
             //普通の返信
             if (message.ToString() == "チノちゃんかわいい")
